@@ -1,0 +1,24 @@
+.container {
+    display: grid;
+    grid-template-rows: 10vh 101vh 101vh 25vh 8vh;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "area1 "
+    "area2 "
+    "area2 "
+    "area3"
+    "area4";
+}
+
+@media screen and (max-width:$max-tablet) {
+    .container {
+        grid-template-rows: 10vh 150vh 150vh 25vh 8vh; 
+    }
+}
+
+@media screen and (max-width:$max-tablet) {
+    .container {
+        grid-template-rows: 10vh 185vh 185vh 25vh 8vh; 
+        padding: .5rem 1rem;
+    }
+}

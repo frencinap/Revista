@@ -1,0 +1,22 @@
+.menu {
+    grid-area: area1;
+    padding: .5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid $gray;
+
+    &__nav {
+        padding-top: .5rem;
+    }
+
+    &__item {
+        padding-right: .2rem;
+        text-transform: uppercase;
+    }
+}
+
+@media screen and (max-width:$max-mobile) {
+    #dissapear {
+        display: none;
+    }
+}
